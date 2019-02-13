@@ -196,3 +196,9 @@ variable "health_check_matcher" {
   default     = "200-399"
   description = "The HTTP response codes to indicate a healthy check"
 }
+
+variable "target_type" {
+  type        = "string"
+  default     = "ip"
+  description = "Target assignment type: ip/instance
+}
